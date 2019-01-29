@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>4D66C73F-E2FB-416F-B486-0A8E52EEE9BD</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4D66C73F-E2FB-416F-B486-0A8E52EEE9BD.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Navigation project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Navigation</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Navigation with scheme Navigation and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>570357478.35465896</real>
+			<key>timeStoppedRecording</key>
+			<real>570357480.98832297</real>
+			<key>title</key>
+			<string>Building project Navigation with scheme Navigation and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>4D66C73F-E2FB-416F-B486-0A8E52EEE9BD</string>
+		</dict>
+		<key>8AD3E267-999C-4CAD-A19A-DCC5A25A7308</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8AD3E267-999C-4CAD-A19A-DCC5A25A7308.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Navigation project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Navigation</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Navigation with scheme Navigation and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>570359720.34160697</real>
+			<key>timeStoppedRecording</key>
+			<real>570359722.94352603</real>
+			<key>title</key>
+			<string>Building project Navigation with scheme Navigation and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>8AD3E267-999C-4CAD-A19A-DCC5A25A7308</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
