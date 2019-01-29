@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/isa/Documents/playground/REACT/Navigation/node_modules/react-native/React/Base/RCTMultipartStreamReader.m \
-  /Users/isa/Documents/playground/REACT/Navigation/node_modules/react-native/React/Base/RCTMultipartStreamReader.h
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTMultipartStreamReader.m \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTMultipartStreamReader.h
