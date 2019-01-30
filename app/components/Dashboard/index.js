@@ -22,7 +22,8 @@ class Dashboard extends Component {
         console.log(item)
         console.log('Tapped')
         this.props.navigation.navigate('profile', {
-            itemKey: item
+            itemKey: item,
+            isEditButton: true
         })
     }
 

@@ -1,11 +1,33 @@
 import React, { Component } from 'react'
-import { View, StyleSheet, Text, Image, Dimensions } from 'react-native'
-import { ScrollView } from 'react-native-gesture-handler';
- 
+import { View, StyleSheet, Text, Image, Dimensions, Button } from 'react-native'
+import { ScrollView, TextInput } from 'react-native-gesture-handler';
+
 class Profile extends Component {
+    
+    constructor() {
+        super()
+        this.state = {
+            isEdit: "Edit",
+            border: {
+                borderColor: 'grey',
+                borderWidth: 0.5,
+                borderRadius: 5
+            }
+        }
+    }
 
     static navigationOptions = ({ navigation }) => ({
+        
         title: 'Profile',
+        headerRight: (
+            <Button
+              onPress={() => {
+                navigation.setParams({isEditButton: !navigation.state.params.isEditButton});
+                }
+            }
+            title={navigation.state.params.isEditButton ? 'Edit' : 'Done'}
+            />
+          ),
         headerTitleStyle : {textAlign: 'center',alignSelf:'center'},
     });
 
@@ -17,9 +39,9 @@ class Profile extends Component {
         let valueArr=[item_.key, '15 February 1995', 'Gresik, East Java', 'iOS Developer','Be kind, be brave']
         for (let i=0; i<5; i++){
             arr.push(
-                <View style={{flexDirection: 'row',}}>
+                <View style={{flexDirection: 'row', marginVertical: 10}}>
                     <Text style={styles.key}>{keyArr[i]}</Text>
-                    <Text style={styles.value}>{valueArr[i]}</Text>
+                    <TextInput style={styles.value}>{valueArr[i]}</TextInput>
                 </View>
             )
         }
@@ -27,6 +49,17 @@ class Profile extends Component {
             <View style={styles.container}>
                 <Image source={item_.src} style={styles.image}></Image>
                 <Text style={styles.title}>{item_.key}</Text>
+                <Text style={styles.title}>{this.state.isEdit}</Text>
+                <Button
+                    onPress={() => {
+                        this.setState({
+                            isEdit: this.state.isEdit=='Done' ? 'Edit' : 'Done'
+                        })
+                        alert('This is a button!')
+                        }
+                    }
+                    title={this.state.isEdit}
+                />
                 <ScrollView horizontal pagingEnabled>
                     <Text style={styles.description}>{item_.description}</Text>
                     <View style={styles.biodata}>
@@ -46,7 +79,11 @@ const styles = StyleSheet.create({
     },
     biodata:{
         width: Dimensions.get('screen').width - 20,
-        padding: 20,
+        borderRadius: 5,
+        borderWidth: 2,
+        borderColor: 'grey',
+        alignSelf: 'baseline',
+        paddingHorizontal: 20,
     },
     image: {
         width: 100,
@@ -75,7 +112,7 @@ const styles = StyleSheet.create({
     value: {
         color: 'grey',
         fontSize: 17,
-        flex: 3
+        flex: 3,
     },
 })
 
