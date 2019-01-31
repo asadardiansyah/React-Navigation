@@ -9,11 +9,21 @@ class Profile extends Component {
         this.state = {
             isEdit: "Edit",
             border: {
-                borderColor: 'grey',
-                borderWidth: 0.5,
-                borderRadius: 5
-            }
+                borderWidth: 0,
+            },
+            editA : false
         }
+    }
+
+    butonPressed = () => {
+        const {isEdit, editA} = this.state
+        this.setState({
+            isEdit: isEdit == 'Done' ? 'Edit' : 'Done',
+            border: {
+                borderWidth: isEdit == 'Done' ? 0 : 0.5,
+            },
+            editA: !editA
+        })
     }
 
     static navigationOptions = ({ navigation }) => ({
@@ -21,9 +31,7 @@ class Profile extends Component {
         title: 'Profile',
         headerRight: (
             <Button
-              onPress={() => {
-                navigation.setParams({isEditButton: !navigation.state.params.isEditButton});
-                }
+              onPress={() => { this.butonPressed() }
             }
             title={navigation.state.params.isEditButton ? 'Edit' : 'Done'}
             />
@@ -32,16 +40,20 @@ class Profile extends Component {
     });
 
     render() {
+        const { isEdit, editA, border } = this.state
         const { navigation } = this.props
         const item_ = navigation.getParam('itemKey')
         let arr=[]
         let keyArr=['Name','Date of Birth','Address','Roles','Motto']
         let valueArr=[item_.key, '15 February 1995', 'Gresik, East Java', 'iOS Developer','Be kind, be brave']
         for (let i=0; i<5; i++){
+            let a = i == 0 ? true : false
             arr.push(
                 <View style={{flexDirection: 'row', marginVertical: 10}}>
                     <Text style={styles.key}>{keyArr[i]}</Text>
-                    <TextInput style={styles.value}>{valueArr[i]}</TextInput>
+                    <TextInput
+                        editable = {editA}
+                        style={[styles.value, border]}>{valueArr[i]}</TextInput>
                 </View>
             )
         }
@@ -49,16 +61,13 @@ class Profile extends Component {
             <View style={styles.container}>
                 <Image source={item_.src} style={styles.image}></Image>
                 <Text style={styles.title}>{item_.key}</Text>
-                <Text style={styles.title}>{this.state.isEdit}</Text>
+                <Text style={styles.title}>{isEdit}</Text>
                 <Button
                     onPress={() => {
-                        this.setState({
-                            isEdit: this.state.isEdit=='Done' ? 'Edit' : 'Done'
-                        })
-                        alert('This is a button!')
+                            this.butonPressed()
                         }
                     }
-                    title={this.state.isEdit}
+                    title={isEdit}
                 />
                 <ScrollView horizontal pagingEnabled>
                     <Text style={styles.description}>{item_.description}</Text>
@@ -80,9 +89,9 @@ const styles = StyleSheet.create({
     biodata:{
         width: Dimensions.get('screen').width - 20,
         borderRadius: 5,
-        borderWidth: 2,
         borderColor: 'grey',
         alignSelf: 'baseline',
+        borderWidth: 2,
         paddingHorizontal: 20,
     },
     image: {
@@ -107,12 +116,15 @@ const styles = StyleSheet.create({
     key: {
         color: 'black',
         fontSize: 17,
-        flex: 2,
+        alignSelf: 'center',
+        flex: 1.5,
     },
     value: {
         color: 'grey',
         fontSize: 17,
-        flex: 3,
+        height: 40,
+        flex: 3.5,
+        paddingHorizontal: 5
     },
 })
 

@@ -6,35 +6,6 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>99627E4E-ABB0-4981-86C0-D61A467574DD</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>99627E4E-ABB0-4981-86C0-D61A467574DD.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>E</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Navigation project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Navigation</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building project Navigation with scheme Navigation and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>570506643.44110894</real>
-			<key>timeStoppedRecording</key>
-			<real>570506727.42406797</real>
-			<key>title</key>
-			<string>Building project Navigation with scheme Navigation and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>99627E4E-ABB0-4981-86C0-D61A467574DD</string>
-		</dict>
 		<key>E21E4F64-2A48-418E-9EDD-61AE03FFD683</key>
 		<dict>
 			<key>className</key>
