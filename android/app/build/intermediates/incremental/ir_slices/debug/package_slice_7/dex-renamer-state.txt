@@ -1,0 +1,4 @@
+#Fri Feb 01 13:34:32 WIB 2019
+base.0=/Users/isa/Documents/GitHub/React-Navigation/android/app/build/intermediates/transforms/dexMerger/debug/8
+path.0=classes.dex
+renamed.0=classes.dex

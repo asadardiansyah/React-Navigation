@@ -29,13 +29,6 @@ class Profile extends Component {
     static navigationOptions = ({ navigation }) => ({
         
         title: 'Profile',
-        headerRight: (
-            <Button
-              onPress={() => { this.butonPressed() }
-            }
-            title={navigation.state.params.isEditButton ? 'Edit' : 'Done'}
-            />
-          ),
         headerTitleStyle : {textAlign: 'center',alignSelf:'center'},
     });
 
@@ -60,16 +53,19 @@ class Profile extends Component {
         return (
             <View style={styles.container}>
                 <Image source={item_.src} style={styles.image}></Image>
-                <Text style={styles.title}>{item_.key}</Text>
-                <Text style={styles.title}>{isEdit}</Text>
+                <TextInput
+                    editable = {editA}
+                    style={[styles.title, border]}>{item_.key}
+                </TextInput>
                 <Button
+                    style={{marginBottom: 20}}
                     onPress={() => {
                             this.butonPressed()
                         }
                     }
                     title={isEdit}
                 />
-                <ScrollView horizontal pagingEnabled>
+                <ScrollView style={{marginTop:20}} horizontal pagingEnabled>
                     <Text style={styles.description}>{item_.description}</Text>
                     <View style={styles.biodata}>
                         {arr}
@@ -101,6 +97,7 @@ const styles = StyleSheet.create({
         marginTop: 30
     },
     title: {
+        paddingHorizontal: 15,
         textAlign: 'center',
         fontSize: 30,
         color: 'black',
@@ -124,7 +121,8 @@ const styles = StyleSheet.create({
         fontSize: 17,
         height: 40,
         flex: 3.5,
-        paddingHorizontal: 5
+        paddingHorizontal: 5,
+        borderRadius: 5
     },
 })
 
