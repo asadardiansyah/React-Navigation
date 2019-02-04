@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { View, StyleSheet, Text, Image, Dimensions, Button } from 'react-native'
 import { ScrollView, TextInput } from 'react-native-gesture-handler';
+import PersonObj from '../../Models/PersonObj.ts';
 
 class Profile extends Component {
     
@@ -13,6 +14,7 @@ class Profile extends Component {
             },
             editA : false
         }
+        this.person = new PersonObj()
     }
 
     butonPressed = () => {
@@ -36,9 +38,10 @@ class Profile extends Component {
         const { isEdit, editA, border } = this.state
         const { navigation } = this.props
         const item_ = navigation.getParam('itemKey')
+        const obj = item_.obj
         let arr=[]
         let keyArr=['Name','Date of Birth','Address','Roles','Motto']
-        let valueArr=[item_.key, '15 February 1995', 'Gresik, East Java', 'iOS Developer','Be kind, be brave']
+        let valueArr=[obj.name + 'aaa', '15 February 1995', 'Gresik, East Java', 'iOS Developer','Be kind, be brave']
         for (let i=0; i<5; i++){
             let a = i == 0 ? true : false
             arr.push(

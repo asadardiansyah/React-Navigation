@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>13CB0DA0-035D-44EF-8EC8-24E05AED0CFA</key>
+		<key>2FF5649E-BB29-44A3-B98B-190053696A98</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>13CB0DA0-035D-44EF-8EC8-24E05AED0CFA.xcactivitylog</string>
+			<string>2FF5649E-BB29-44A3-B98B-190053696A98.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>E</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,42 +27,13 @@
 			<key>signature</key>
 			<string>Building project Navigation with scheme Navigation and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>570938089.04038405</real>
+			<real>570966701.76546097</real>
 			<key>timeStoppedRecording</key>
-			<real>570938214.592453</real>
+			<real>570966707.966344</real>
 			<key>title</key>
 			<string>Building project Navigation with scheme Navigation and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>13CB0DA0-035D-44EF-8EC8-24E05AED0CFA</string>
-		</dict>
-		<key>AB5B0A2C-E4A7-4F59-8F44-A68AC2BBFACD</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>AB5B0A2C-E4A7-4F59-8F44-A68AC2BBFACD.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>E</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Navigation project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Navigation</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building project Navigation with scheme Navigation and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>570698605.874915</real>
-			<key>timeStoppedRecording</key>
-			<real>570698614.290501</real>
-			<key>title</key>
-			<string>Building project Navigation with scheme Navigation and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>AB5B0A2C-E4A7-4F59-8F44-A68AC2BBFACD</string>
+			<string>2FF5649E-BB29-44A3-B98B-190053696A98</string>
 		</dict>
 	</dict>
 </dict>
