@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity } from 'react-native'
+import PersonObj from '../../Models/PersonObj';
 
 class Dashboard extends Component {
     
@@ -50,8 +51,12 @@ class Dashboard extends Component {
                 case 6: ico = require('../../assets/boy-7.png')
                 break
             }
+            var pers = new PersonObj()
+            pers.name = nama[i]
+            pers.description = desc
             arrData.push(
                 {
+                    obj: pers,
                     key: nama[i],
                     src: ico,
                     description: desc
