@@ -6,6 +6,35 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
+		<key>13CB0DA0-035D-44EF-8EC8-24E05AED0CFA</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>13CB0DA0-035D-44EF-8EC8-24E05AED0CFA.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>E</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Navigation project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Navigation</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Navigation with scheme Navigation and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>570938089.04038405</real>
+			<key>timeStoppedRecording</key>
+			<real>570938214.592453</real>
+			<key>title</key>
+			<string>Building project Navigation with scheme Navigation and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>13CB0DA0-035D-44EF-8EC8-24E05AED0CFA</string>
+		</dict>
 		<key>AB5B0A2C-E4A7-4F59-8F44-A68AC2BBFACD</key>
 		<dict>
 			<key>className</key>
@@ -34,35 +63,6 @@
 			<string>Building project Navigation with scheme Navigation and configuration Debug</string>
 			<key>uniqueIdentifier</key>
 			<string>AB5B0A2C-E4A7-4F59-8F44-A68AC2BBFACD</string>
-		</dict>
-		<key>F680527B-ED45-4D47-9CC2-8E3DEC7C8494</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>F680527B-ED45-4D47-9CC2-8E3DEC7C8494.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>E</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>Navigation project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>Navigation</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building project Navigation with scheme Navigation and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>570696921.45447004</real>
-			<key>timeStoppedRecording</key>
-			<real>570696925.62559295</real>
-			<key>title</key>
-			<string>Building project Navigation with scheme Navigation and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>F680527B-ED45-4D47-9CC2-8E3DEC7C8494</string>
 		</dict>
 	</dict>
 </dict>
