@@ -22,12 +22,12 @@ class Dashboard extends Component {
     cellTapped(item) {
         console.log(item)
         console.log('Tapped')
-        // this.props.navigation.navigate('profile', {
-        //     itemKey: item,
-        //     isEditButton: true
-        // })
-        this.save(item.obj.name,JSON.stringify(item.obj))
-        this.load(item.obj.name)
+        this.props.navigation.navigate('profile', {
+            itemKey: item,
+            isEditButton: true
+        })
+        // this.save(item.obj.name,JSON.stringify(item.obj))
+        // this.load(item.obj.name)
     }
 
     save = async (key, object) => {
