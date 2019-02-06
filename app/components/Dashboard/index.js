@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity } from 'react-native'
+import { AsyncStorage, View, Text, StyleSheet, FlatList, Image, TouchableOpacity } from 'react-native'
 import PersonObj from '../../Models/PersonObj';
 
 class Dashboard extends Component {
@@ -22,13 +22,48 @@ class Dashboard extends Component {
     cellTapped(item) {
         console.log(item)
         console.log('Tapped')
-        this.props.navigation.navigate('profile', {
-            itemKey: item,
-            isEditButton: true
-        })
+        // this.props.navigation.navigate('profile', {
+        //     itemKey: item,
+        //     isEditButton: true
+        // })
+        this.save(item.obj.name,JSON.stringify(item.obj))
+        this.load(item.obj.name)
     }
 
+    save = async (key, object) => {
+        console.log('mulai proses save')
+        console.log('key: '+key)
+        console.log('value: '+object)
+        try {
+          await AsyncStorage.setItem(key,object);
+        } catch (error) {
+          // Error saving data
+          console.log(error)
+        }
+      };
+
+    load = async (key) => {
+        console.log('mulai proses load')
+        try {
+          const value = await AsyncStorage.getItem(key);
+          if (value !== null) {
+            // We have data!!
+            console.log('cetak value')
+            console.log(value);
+          }
+          else {
+            console.log('ini disini')
+            console.log(value)
+          }
+        } catch (error) {
+          // Error retrieving data
+          console.log('ini error')
+          console.log(error)
+        }
+      };
+
     render() {
+        console.log('mulai render dashboard')
         let arrData = []
         let nama = ['Martin','Ismail','Suryo','Ridwam','Asad','Wachid','Hengki']
         let desc = 'In this example, We will make a simple list which will have A to Z as items and will show an alert with the item id and name while clicking on the single item of the list. So let’s get started.'
@@ -51,18 +86,21 @@ class Dashboard extends Component {
                 case 6: ico = require('../../assets/boy-7.png')
                 break
             }
-            var pers = new PersonObj()
-            pers.name = nama[i]
-            pers.description = desc
+            var person = new PersonObj()
+            person.name = nama[i]
+            person.description = desc
+            
             arrData.push(
                 {
-                    obj: pers,
+                    obj: person,
                     key: nama[i],
                     src: ico,
                     description: desc
                 }
             )
+            
         }
+        
         return (
             <View style={styles.container}>
                 <FlatList style={{flex: 1}}
