@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, StyleSheet, Text, Image, Dimensions, Button } from 'react-native'
+import { AsyncStorage, View, StyleSheet, Text, Image, Dimensions, Button } from 'react-native'
 import { ScrollView, TextInput } from 'react-native-gesture-handler';
 import PersonObj from '../../Models/PersonObj.ts';
 
@@ -12,7 +12,8 @@ class Profile extends Component {
             border: {
                 borderWidth: 0,
             },
-            editA : false
+            editA : false,
+
         }
         this.person = new PersonObj()
     }
@@ -55,6 +56,39 @@ class Profile extends Component {
             },
             editA: !editA
         })
+        if (this.state.isEdit == 'Done') {
+            this.save('Martin', JSON.stringify(this.state.person))
+            this.load('Martin')
+        }
+    }
+
+    handleChange = (text, index, obj) => {
+        console.log(text)
+        console.log(index)
+        console.log(JSON.stringify(obj))
+
+        switch (index) {
+            case 0:
+                obj.name = text
+                break
+            case 1:
+                obj.dob = text
+                break
+            case 2:
+                obj.address = text
+                break
+            case 3:
+                obj.roles = text
+                break
+            case 4:
+                obj.motto = text
+                break
+        }
+
+        this.setState({
+            person: obj
+        })
+        console.log('setelah diedit '+JSON.stringify(this.state.person))
     }
 
     static navigationOptions = ({ navigation }) => ({
@@ -67,15 +101,19 @@ class Profile extends Component {
         const { navigation } = this.props
         const item_ = navigation.getParam('itemKey')
         const obj = item_.obj
+        console.log('print obj: '+JSON.stringify(obj))
         let arr=[]
         let keyArr=['Name','Date of Birth','Address','Roles','Motto']
-        let valueArr=[obj.name + 'aaa', '15 February 1995', 'Gresik, East Java', 'iOS Developer','Be kind, be brave']
+        let valueArr=[obj.name, obj.dob, obj.address, obj.roles, obj.motto]
         for (let i=0; i<5; i++){
             let a = i == 0 ? true : false
             arr.push(
                 <View style={{flexDirection: 'row', marginVertical: 10}}>
                     <Text style={styles.key}>{keyArr[i]}</Text>
                     <TextInput
+                        onChangeText={
+                            (text) => this.handleChange(text, i, obj)
+                        }
                         editable = {editA}
                         style={[styles.value, border]}>{valueArr[i]}</TextInput>
                 </View>
