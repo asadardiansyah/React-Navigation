@@ -17,6 +17,35 @@ class Profile extends Component {
         this.person = new PersonObj()
     }
 
+    save = async (key, object) => {
+        console.log('mulai proses save')
+        console.log('key: '+key)
+        console.log('value: '+object)
+        try {
+          await AsyncStorage.setItem(key,object);
+        } catch (error) {
+          console.log(error)
+        }
+      };
+
+    load = async (key) => {
+        console.log('mulai proses load')
+        try {
+          const value = await AsyncStorage.getItem(key);
+          if (value !== null) {
+            console.log('cetak value')
+            console.log(value);
+          }
+          else {
+            console.log('ini disini')
+            console.log(value)
+          }
+        } catch (error) {
+          console.log('ini error')
+          console.log(error)
+        }
+      };
+
     butonPressed = () => {
         const {isEdit, editA} = this.state
         this.setState({
@@ -29,7 +58,6 @@ class Profile extends Component {
     }
 
     static navigationOptions = ({ navigation }) => ({
-        
         title: 'Profile',
         headerTitleStyle : {textAlign: 'center',alignSelf:'center'},
     });
