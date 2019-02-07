@@ -1,22 +1,22 @@
 dependencies: \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/ScrollView/RCTScrollContentView.m \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/ScrollView/RCTScrollContentView.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/RCTView.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/RCTBorderStyle.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/RCTComponent.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/RCTPointerEvents.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTAssert.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTDefines.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/UIView+React.h \
-  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
-  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/ScrollView/RCTScrollView.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/RCTAutoInsetsProtocol.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTEventDispatcher.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTBridge.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTBridgeModule.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTFrameUpdate.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTInvalidating.h \
-  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/ScrollView/RCTScrollableProtocol.h
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/ScrollView/RCTScrollContentView.m \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/ScrollView/RCTScrollContentView.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/RCTView.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/RCTComponent.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/UIView+React.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/ScrollView/RCTScrollView.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/RCTAutoInsetsProtocol.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/React/Views/ScrollView/RCTScrollableProtocol.h

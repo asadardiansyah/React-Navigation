@@ -29,7 +29,7 @@ class Profile extends Component {
       };
 
     load = async (key) => {
-        console.log('mulai proses load')
+        console.log('mulai proses load '+key)
         try {
           const value = await AsyncStorage.getItem(key);
           if (value !== null) {
@@ -38,7 +38,6 @@ class Profile extends Component {
             this.setState({
                 person: JSON.parse(value)
             })
-            return value
           }
           else {
             console.log('ini disini')
@@ -63,7 +62,7 @@ class Profile extends Component {
         })
         if (this.state.isEdit == 'Done') {
             this.save(item_.key, JSON.stringify(this.state.person))
-            
+            this.load(item_.key)
         }
     }
 
@@ -101,16 +100,23 @@ class Profile extends Component {
         headerTitleStyle : {textAlign: 'center',alignSelf:'center'},
     });
 
-    render() {
-        const { isEdit, editA, border, person } = this.state
+
+    componentDidMount(){
         const { navigation } = this.props
         const item_ = navigation.getParam('itemKey')
-        const obj = item_.obj
+        console.log('key: '+item_.key)
         this.load(item_.key)
-        console.log('print obj: '+JSON.stringify(obj))
+    }
+
+    render() {
+        
+        const { isEdit, editA, border } = this.state
+        const { navigation } = this.props
+        const item_ = navigation.getParam('itemKey')
+        const obj = this.state.person
         let arr=[]
         let keyArr=['Name','Date of Birth','Address','Roles','Motto']
-        let valueArr=[person.name, person.dob, person.address, person.roles, person.motto]
+        let valueArr=[obj.name, obj.dob, obj.address, obj.roles, obj.motto]
         for (let i=0; i<5; i++){
             let a = i == 0 ? true : false
             arr.push(
@@ -128,10 +134,7 @@ class Profile extends Component {
         return (
             <View style={styles.container}>
                 <Image source={item_.src} style={styles.image}></Image>
-                <TextInput
-                    editable = {editA}
-                    style={[styles.title, border]}>{item_.key}
-                </TextInput>
+                <Text style={styles.title}>{item_.key}</Text>
                 <Button
                     style={{marginBottom: 20}}
                     onPress={() => {
