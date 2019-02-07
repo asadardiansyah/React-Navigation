@@ -72,21 +72,21 @@ class Profile extends Component {
         console.log(JSON.stringify(obj))
 
         switch (index) {
-            case 0:
-                obj.name = text
-                break
-            case 1:
-                obj.dob = text
-                break
-            case 2:
-                obj.address = text
-                break
-            case 3:
-                obj.roles = text
-                break
-            case 4:
-                obj.motto = text
-                break
+        case 0:
+            obj.name = text
+            break
+        case 1:
+            obj.dob = text
+            break
+        case 2:
+            obj.address = text
+            break
+        case 3:
+            obj.roles = text
+            break
+        case 4:
+            obj.motto = text
+            break
         }
 
         this.setState({
@@ -116,7 +116,7 @@ class Profile extends Component {
         const obj = this.state.person
         let arr=[]
         let keyArr=['Name','Date of Birth','Address','Roles','Motto']
-        let valueArr=[obj.name, obj.dob, obj.address, obj.roles, obj.motto]
+        let valueArr=[person.name, person.dob, person.address, person.roles, person.motto]
         for (let i=0; i<5; i++){
             let a = i == 0 ? true : false
             arr.push(
@@ -124,7 +124,7 @@ class Profile extends Component {
                     <Text style={styles.key}>{keyArr[i]}</Text>
                     <TextInput
                         onChangeText={
-                            (text) => this.handleChange(text, i, obj)
+                            (text) => this.handleChange(text, i, obj, item_.key)
                         }
                         editable = {editA}
                         style={[styles.value, border]}>{valueArr[i]}</TextInput>
