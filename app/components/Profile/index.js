@@ -38,6 +38,7 @@ class Profile extends Component {
             this.setState({
                 person: JSON.parse(value)
             })
+            return value
           }
           else {
             console.log('ini disini')
@@ -72,21 +73,21 @@ class Profile extends Component {
         console.log(JSON.stringify(obj))
 
         switch (index) {
-            case 0:
-                obj.name = text
-                break
-            case 1:
-                obj.dob = text
-                break
-            case 2:
-                obj.address = text
-                break
-            case 3:
-                obj.roles = text
-                break
-            case 4:
-                obj.motto = text
-                break
+        case 0:
+            obj.name = text
+            break
+        case 1:
+            obj.dob = text
+            break
+        case 2:
+            obj.address = text
+            break
+        case 3:
+            obj.roles = text
+            break
+        case 4:
+            obj.motto = text
+            break
         }
 
         this.setState({
