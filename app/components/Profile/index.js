@@ -13,9 +13,8 @@ class Profile extends Component {
                 borderWidth: 0,
             },
             editA : false,
-
+            person: new PersonObj()
         }
-        this.person = new PersonObj()
     }
 
     save = async (key, object) => {
@@ -36,6 +35,10 @@ class Profile extends Component {
           if (value !== null) {
             console.log('cetak value')
             console.log(value);
+            this.setState({
+                person: JSON.parse(value)
+            })
+            return value
           }
           else {
             console.log('ini disini')
@@ -48,6 +51,8 @@ class Profile extends Component {
       };
 
     butonPressed = () => {
+        const { navigation } = this.props
+        const item_ = navigation.getParam('itemKey')
         const {isEdit, editA} = this.state
         this.setState({
             isEdit: isEdit == 'Done' ? 'Edit' : 'Done',
@@ -57,8 +62,8 @@ class Profile extends Component {
             editA: !editA
         })
         if (this.state.isEdit == 'Done') {
-            this.save('Martin', JSON.stringify(this.state.person))
-            this.load('Martin')
+            this.save(item_.key, JSON.stringify(this.state.person))
+            
         }
     }
 
@@ -68,21 +73,21 @@ class Profile extends Component {
         console.log(JSON.stringify(obj))
 
         switch (index) {
-            case 0:
-                obj.name = text
-                break
-            case 1:
-                obj.dob = text
-                break
-            case 2:
-                obj.address = text
-                break
-            case 3:
-                obj.roles = text
-                break
-            case 4:
-                obj.motto = text
-                break
+        case 0:
+            obj.name = text
+            break
+        case 1:
+            obj.dob = text
+            break
+        case 2:
+            obj.address = text
+            break
+        case 3:
+            obj.roles = text
+            break
+        case 4:
+            obj.motto = text
+            break
         }
 
         this.setState({
@@ -97,14 +102,15 @@ class Profile extends Component {
     });
 
     render() {
-        const { isEdit, editA, border } = this.state
+        const { isEdit, editA, border, person } = this.state
         const { navigation } = this.props
         const item_ = navigation.getParam('itemKey')
         const obj = item_.obj
+        this.load(item_.key)
         console.log('print obj: '+JSON.stringify(obj))
         let arr=[]
         let keyArr=['Name','Date of Birth','Address','Roles','Motto']
-        let valueArr=[obj.name, obj.dob, obj.address, obj.roles, obj.motto]
+        let valueArr=[person.name, person.dob, person.address, person.roles, person.motto]
         for (let i=0; i<5; i++){
             let a = i == 0 ? true : false
             arr.push(
@@ -112,7 +118,7 @@ class Profile extends Component {
                     <Text style={styles.key}>{keyArr[i]}</Text>
                     <TextInput
                         onChangeText={
-                            (text) => this.handleChange(text, i, obj)
+                            (text) => this.handleChange(text, i, obj, item_.key)
                         }
                         editable = {editA}
                         style={[styles.value, border]}>{valueArr[i]}</TextInput>

@@ -6,19 +6,19 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		0OuNruzJWJYaFUo5e9wNRu5hLGA=
+		HgRKehFIA6fiQLiZT48Oer53nbw=
 		</data>
 		<key>Frameworks/XCTest.framework/Info.plist</key>
 		<data>
-		SdjOzThclNXu4KLO5h40hBctROA=
+		DQ4GPJ7FuM6H+FaCC/2wxhPSGCQ=
 		</data>
 		<key>Frameworks/XCTest.framework/XCTest</key>
 		<data>
-		xMkt3jnDeDc78TRXd0+2Z35KQLI=
+		HK6asLJ70IK7E4e83e8R1gxACHo=
 		</data>
 		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
 		<data>
-		PWtqWHkq/t3jE+e2ENvRUxmH79A=
+		/8LQToTPOL9FsEsYDaACQ21Day0=
 		</data>
 		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
 		<dict>
@@ -31,15 +31,15 @@
 		</dict>
 		<key>Frameworks/XCTest.framework/version.plist</key>
 		<data>
-		5cRzPtVUKIvxWWkMzFSgiTN1GL4=
+		P6P66kW7+LvLIo4WHjXGltpT8CA=
 		</data>
 		<key>Frameworks/libXCTestBundleInject.dylib</key>
 		<data>
-		kh3DL7UnDxrEpeLfSkD0a5DyoqA=
+		xKX69bDGMJa2TcU/BC9ypZ06rsI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yJXCpqbhfW4+4d54+mxqJ5cWqUU=
+		wWcIQtoT3BwlGnKTbCVxs+e+eDI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -51,19 +51,19 @@
 		</data>
 		<key>PlugIns/NavigationTests.xctest.dSYM/Contents/Resources/DWARF/NavigationTests</key>
 		<data>
-		52Ka27FGTtqpF8aIfUaXy/Src9Q=
+		IqAryxB/Dya7nN7rtwalG+1bK/Q=
 		</data>
 		<key>PlugIns/NavigationTests.xctest/Info.plist</key>
 		<data>
-		nG1wDuioTBZ7EVkejVzo+wMUHwM=
+		fv+Pnp6zv0tdDpXFP8E3X1K0RtQ=
 		</data>
 		<key>PlugIns/NavigationTests.xctest/NavigationTests</key>
 		<data>
-		UUSgauXk39A/5+pxDDsut/H/Pik=
+		O/0Zz1ZkxrTBqvSb6/cKLFsbxjo=
 		</data>
 		<key>PlugIns/NavigationTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
-		MoGSJG14zuGhFP55bUm8TxoVRGw=
+		6rs52ZthQIs+r1ShYg98YYb85cg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -72,44 +72,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0OuNruzJWJYaFUo5e9wNRu5hLGA=
+			HgRKehFIA6fiQLiZT48Oer53nbw=
 			</data>
 			<key>hash2</key>
 			<data>
-			9OZMn8t60Yn3QtBqUVBckgFvl1tbq7qQmPA3GWoljmg=
+			yR/80d8DOec+2L8fMmiiKjhP4wcvM97kAbLHJm85BjM=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SdjOzThclNXu4KLO5h40hBctROA=
+			DQ4GPJ7FuM6H+FaCC/2wxhPSGCQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			2/iVpBjFB5Eb15yfj958wukO7l5pj6EewJRCoeXdZ+Q=
+			VfVpYXVjG5OK2j8J39CP2mIMg1P5eFaYkRIJ/Hb2RSQ=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/XCTest</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xMkt3jnDeDc78TRXd0+2Z35KQLI=
+			HK6asLJ70IK7E4e83e8R1gxACHo=
 			</data>
 			<key>hash2</key>
 			<data>
-			PbtcN1sDyKXVhsFpxcKSZjD2kcyQaK1dyQLcNorCDHY=
+			olgg9NXiZ2M1ifvjBR8uTJxtXlM5EacLdDrNxfmImoY=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PWtqWHkq/t3jE+e2ENvRUxmH79A=
+			/8LQToTPOL9FsEsYDaACQ21Day0=
 			</data>
 			<key>hash2</key>
 			<data>
-			6uvXQHQXgm9gxM9mblxuWfx3k/K7uR1puBprmwDR7V4=
+			C7sJpbu4qpi8/rH5JYpdQYncotP69JQ9Fiu8jrHXYvU=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
@@ -129,22 +129,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5cRzPtVUKIvxWWkMzFSgiTN1GL4=
+			P6P66kW7+LvLIo4WHjXGltpT8CA=
 			</data>
 			<key>hash2</key>
 			<data>
-			ygI1wWTyE9+SYWsvtxZwy/ZZDORcDcIarh3Yo7p2JWY=
+			2BV684CZjHtMZHxSiwC5qc/DGXv9WIOWUc9dEU/Q1pw=
 			</data>
 		</dict>
 		<key>Frameworks/libXCTestBundleInject.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kh3DL7UnDxrEpeLfSkD0a5DyoqA=
+			xKX69bDGMJa2TcU/BC9ypZ06rsI=
 			</data>
 			<key>hash2</key>
 			<data>
-			fpOt7HUuqY2ezAoc4Q2s/uCD+QmTqmstpUSS9I8nCoE=
+			jJ/zKe1SwWk9KkZ4MXV01NPW4QiHpU1aZhpfTDknkp0=
 			</data>
 		</dict>
 		<key>PlugIns/NavigationTests.xctest.dSYM/Contents/Info.plist</key>
@@ -162,50 +162,50 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			52Ka27FGTtqpF8aIfUaXy/Src9Q=
+			IqAryxB/Dya7nN7rtwalG+1bK/Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			XU2eP5GyNOhnB6JqrjwT08iNHwEE59Gv8rZgIFlDA0o=
+			AIv/n8a7Rp1qYR4teYPuex2Sk3lrcbzNShT8khnAW+Q=
 			</data>
 		</dict>
 		<key>PlugIns/NavigationTests.xctest/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nG1wDuioTBZ7EVkejVzo+wMUHwM=
+			fv+Pnp6zv0tdDpXFP8E3X1K0RtQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			BT/fZnnwZDgpLVBOJ4Z7Nuzc5XgjKksIsWBU29FOlKo=
+			ULqluDOx8nJuG2yU01K/zKoCnGFM9eRDDJYqZHSqW18=
 			</data>
 		</dict>
 		<key>PlugIns/NavigationTests.xctest/NavigationTests</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UUSgauXk39A/5+pxDDsut/H/Pik=
+			O/0Zz1ZkxrTBqvSb6/cKLFsbxjo=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z8+1j7ZoCbE2PtNTK3fAzKL7nTlVuTkWjuMExbChyvQ=
+			toWkFQrRwyW/LM69Zk8n295zJ62Ave7m9BzgV65GxYY=
 			</data>
 		</dict>
 		<key>PlugIns/NavigationTests.xctest/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MoGSJG14zuGhFP55bUm8TxoVRGw=
+			6rs52ZthQIs+r1ShYg98YYb85cg=
 			</data>
 			<key>hash2</key>
 			<data>
-			xSZJuct/sWx42/9tfuUIEC5Vc7NbCss7nkhWYyYnl+Y=
+			WUNxAzdPGJ/Rm9SoPaGs/xfqVv4yyBe3EQ4m1/dYim0=
 			</data>
 		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^.*</key>
+		<key>^</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -236,12 +236,24 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
+		<key>^</key>
+		<dict>
+			<key>weight</key>
+			<real>20</real>
+		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
+		</dict>
+		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
+		<dict>
+			<key>nested</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -277,6 +289,13 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
+		</dict>
+		<key>^[^/]+$</key>
+		<dict>
+			<key>nested</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>

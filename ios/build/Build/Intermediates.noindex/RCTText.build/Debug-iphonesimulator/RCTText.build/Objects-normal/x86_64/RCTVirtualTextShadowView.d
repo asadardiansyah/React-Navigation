@@ -1,23 +1,23 @@
 dependencies: \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/Libraries/Text/VirtualText/RCTVirtualTextShadowView.m \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/Libraries/Text/VirtualText/RCTVirtualTextShadowView.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/Libraries/Text/BaseText/RCTBaseTextShadowView.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLayout.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/Libraries/Text/RCTTextAttributes.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/Libraries/Text/RCTTextTransform.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView+Layout.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/Libraries/Text/RawText/RCTRawTextShadowView.h
+  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/Libraries/Text/VirtualText/RCTVirtualTextShadowView.m \
+  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/Libraries/Text/VirtualText/RCTVirtualTextShadowView.h \
+  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/Libraries/Text/BaseText/RCTBaseTextShadowView.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLayout.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/Libraries/Text/RCTTextAttributes.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/Libraries/Text/RCTTextTransform.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView+Layout.h \
+  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/Libraries/Text/RawText/RCTRawTextShadowView.h
