@@ -116,7 +116,7 @@ class Profile extends Component {
         const obj = this.state.person
         let arr=[]
         let keyArr=['Name','Date of Birth','Address','Roles','Motto']
-        let valueArr=[person.name, person.dob, person.address, person.roles, person.motto]
+        let valueArr=[obj.name, obj.dob, obj.address, obj.roles, obj.motto]
         for (let i=0; i<5; i++){
             let a = i == 0 ? true : false
             arr.push(
