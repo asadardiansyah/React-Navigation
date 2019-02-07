@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		0OuNruzJWJYaFUo5e9wNRu5hLGA=
+		MmO/kO2JAWk6tE8ZSSaEZfMdQsA=
 		</data>
 		<key>Frameworks/XCTest.framework/Info.plist</key>
 		<data>
@@ -51,7 +51,7 @@
 		</data>
 		<key>PlugIns/NavigationTests.xctest.dSYM/Contents/Resources/DWARF/NavigationTests</key>
 		<data>
-		52Ka27FGTtqpF8aIfUaXy/Src9Q=
+		FT6iPNw1g98DVoRD4lHcZiJfUeM=
 		</data>
 		<key>PlugIns/NavigationTests.xctest/Info.plist</key>
 		<data>
@@ -59,7 +59,7 @@
 		</data>
 		<key>PlugIns/NavigationTests.xctest/NavigationTests</key>
 		<data>
-		UUSgauXk39A/5+pxDDsut/H/Pik=
+		ZuJykMelrXkDG26sB1r35QYeRxE=
 		</data>
 		<key>PlugIns/NavigationTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
@@ -72,11 +72,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0OuNruzJWJYaFUo5e9wNRu5hLGA=
+			MmO/kO2JAWk6tE8ZSSaEZfMdQsA=
 			</data>
 			<key>hash2</key>
 			<data>
-			9OZMn8t60Yn3QtBqUVBckgFvl1tbq7qQmPA3GWoljmg=
+			jPK6Vls16gelbLZ+SZoNYqV15zjtF69iJtqYeDPGjNc=
 			</data>
 		</dict>
 		<key>Frameworks/XCTest.framework/Info.plist</key>
@@ -162,11 +162,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			52Ka27FGTtqpF8aIfUaXy/Src9Q=
+			FT6iPNw1g98DVoRD4lHcZiJfUeM=
 			</data>
 			<key>hash2</key>
 			<data>
-			XU2eP5GyNOhnB6JqrjwT08iNHwEE59Gv8rZgIFlDA0o=
+			Hct7ZzcGFFJ/wxKFLM+waJErdRCHvOFbpiGTxdPSnKE=
 			</data>
 		</dict>
 		<key>PlugIns/NavigationTests.xctest/Info.plist</key>
@@ -184,11 +184,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UUSgauXk39A/5+pxDDsut/H/Pik=
+			ZuJykMelrXkDG26sB1r35QYeRxE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z8+1j7ZoCbE2PtNTK3fAzKL7nTlVuTkWjuMExbChyvQ=
+			UbDvLVS3WcpuwOn5gH/l3iPljnUOA5U2HmKJY/7DKwo=
 			</data>
 		</dict>
 		<key>PlugIns/NavigationTests.xctest/_CodeSignature/CodeResources</key>

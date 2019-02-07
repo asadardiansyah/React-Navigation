@@ -13,9 +13,8 @@ class Profile extends Component {
                 borderWidth: 0,
             },
             editA : false,
-
+            person: new PersonObj()
         }
-        this.person = new PersonObj()
     }
 
     save = async (key, object) => {
@@ -30,12 +29,15 @@ class Profile extends Component {
       };
 
     load = async (key) => {
-        console.log('mulai proses load')
+        console.log('mulai proses load '+key)
         try {
           const value = await AsyncStorage.getItem(key);
           if (value !== null) {
             console.log('cetak value')
             console.log(value);
+            this.setState({
+                person: JSON.parse(value)
+            })
           }
           else {
             console.log('ini disini')
@@ -48,6 +50,8 @@ class Profile extends Component {
       };
 
     butonPressed = () => {
+        const { navigation } = this.props
+        const item_ = navigation.getParam('itemKey')
         const {isEdit, editA} = this.state
         this.setState({
             isEdit: isEdit == 'Done' ? 'Edit' : 'Done',
@@ -57,8 +61,8 @@ class Profile extends Component {
             editA: !editA
         })
         if (this.state.isEdit == 'Done') {
-            this.save('Martin', JSON.stringify(this.state.person))
-            this.load('Martin')
+            this.save(item_.key, JSON.stringify(this.state.person))
+            this.load(item_.key)
         }
     }
 
@@ -96,12 +100,20 @@ class Profile extends Component {
         headerTitleStyle : {textAlign: 'center',alignSelf:'center'},
     });
 
+
+    componentDidMount(){
+        const { navigation } = this.props
+        const item_ = navigation.getParam('itemKey')
+        console.log('key: '+item_.key)
+        this.load(item_.key)
+    }
+
     render() {
+        
         const { isEdit, editA, border } = this.state
         const { navigation } = this.props
         const item_ = navigation.getParam('itemKey')
-        const obj = item_.obj
-        console.log('print obj: '+JSON.stringify(obj))
+        const obj = this.state.person
         let arr=[]
         let keyArr=['Name','Date of Birth','Address','Roles','Motto']
         let valueArr=[obj.name, obj.dob, obj.address, obj.roles, obj.motto]
@@ -122,10 +134,7 @@ class Profile extends Component {
         return (
             <View style={styles.container}>
                 <Image source={item_.src} style={styles.image}></Image>
-                <TextInput
-                    editable = {editA}
-                    style={[styles.title, border]}>{item_.key}
-                </TextInput>
+                <Text style={styles.title}>{item_.key}</Text>
                 <Button
                     style={{marginBottom: 20}}
                     onPress={() => {
