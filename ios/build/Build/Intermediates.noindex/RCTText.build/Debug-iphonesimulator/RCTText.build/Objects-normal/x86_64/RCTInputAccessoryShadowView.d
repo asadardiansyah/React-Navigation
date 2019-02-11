@@ -1,19 +1,19 @@
 dependencies: \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/Libraries/Text/TextInput/RCTInputAccessoryShadowView.m \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/node_modules/react-native/Libraries/Text/TextInput/RCTInputAccessoryShadowView.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLayout.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
-  /Users/asadardiansyah/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h
+  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/Libraries/Text/TextInput/RCTInputAccessoryShadowView.m \
+  /Users/isa/Documents/GitHub/React-Navigation/node_modules/react-native/Libraries/Text/TextInput/RCTInputAccessoryShadowView.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLayout.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/isa/Documents/GitHub/React-Navigation/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h
