@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { AsyncStorage, View, StyleSheet, Text, Image, Dimensions, Button } from 'react-native'
+import { DatePickerIOS, AsyncStorage, View, StyleSheet, Text, Image, Dimensions, Button } from 'react-native'
 import { ScrollView, TextInput } from 'react-native-gesture-handler';
 import PersonObj from '../../Models/PersonObj.ts';
 
@@ -13,8 +13,16 @@ class Profile extends Component {
                 borderWidth: 0,
             },
             editA : false,
-            person: new PersonObj()
+            visibility: false,
+            person: new PersonObj(),
+            chosenDate: new Date('15 Feb 1995')
+
         }
+        this.setDate = this.setDate.bind(this);
+    }
+
+    setDate(newDate) {
+        this.setState({chosenDate: newDate});
     }
 
     save = async (key, object) => {
@@ -52,13 +60,14 @@ class Profile extends Component {
     butonPressed = () => {
         const { navigation } = this.props
         const item_ = navigation.getParam('itemKey')
-        const {isEdit, editA} = this.state
+        const {isEdit, editA, visibility} = this.state
         this.setState({
             isEdit: isEdit == 'Done' ? 'Edit' : 'Done',
             border: {
                 borderWidth: isEdit == 'Done' ? 0 : 0.5,
             },
-            editA: !editA
+            editA: !editA,
+            visibility: !visibility
         })
         if (this.state.isEdit == 'Done') {
             this.save(item_.key, JSON.stringify(this.state.person))
@@ -119,17 +128,37 @@ class Profile extends Component {
         let valueArr=[obj.name, obj.dob, obj.address, obj.roles, obj.motto]
         for (let i=0; i<5; i++){
             let a = i == 0 ? true : false
-            arr.push(
-                <View style={{flexDirection: 'row', marginVertical: 10}}>
-                    <Text style={styles.key}>{keyArr[i]}</Text>
-                    <TextInput
-                        onChangeText={
-                            (text) => this.handleChange(text, i, obj, item_.key)
-                        }
-                        editable = {editA}
-                        style={[styles.value, border]}>{valueArr[i]}</TextInput>
-                </View>
-            )
+            if (i == 1 && editA) {
+                arr.push(
+                    <View style={{flexDirection: 'row', marginVertical: 10}}>
+                        <Text style={styles.key}>{keyArr[i]}</Text>
+                        <View style={{flex: 3.5, flexDirection: 'row'}}>
+                            <TextInput
+                                onChangeText={
+                                    (text) => this.handleChange(text, i, obj, item_.key)
+                                }
+                                editable = {editA}
+                                style={[styles.value, border]}>{valueArr[i]}</TextInput>
+                                <Button title='calendar' style={{flex:0.5}}></Button>
+                        </View>
+                        
+                    </View>    
+                )
+            }
+            else {
+                arr.push(
+                    <View style={{flexDirection: 'row', marginVertical: 10}}>
+                        <Text style={styles.key}>{keyArr[i]}</Text>
+                        <TextInput
+                            onChangeText={
+                                (text) => this.handleChange(text, i, obj, item_.key)
+                            }
+                            editable = {editA}
+                            style={[styles.value, border]}>{valueArr[i]}</TextInput>
+                    </View>
+                )
+            }
+            
         }
         return (
             <View style={styles.container}>
@@ -147,6 +176,13 @@ class Profile extends Component {
                     <Text style={styles.description}>{item_.description}</Text>
                     <View style={styles.biodata}>
                         {arr}
+                    </View>
+                    <View style={styles.datePicker}>
+                        <DatePickerIOS
+                        mode='date'
+                        date={this.state.chosenDate}
+                        onDateChange={this.setDate}
+                        />
                     </View>
                 </ScrollView>
             </View>
@@ -166,7 +202,7 @@ const styles = StyleSheet.create({
         borderColor: 'grey',
         alignSelf: 'baseline',
         borderWidth: 2,
-        paddingHorizontal: 20,
+        paddingHorizontal: 15,
     },
     image: {
         width: 100,
@@ -199,9 +235,11 @@ const styles = StyleSheet.create({
         fontSize: 17,
         height: 40,
         flex: 3.5,
-        paddingHorizontal: 5,
-        borderRadius: 5
+        borderRadius: 5,
     },
+    datePicker: {
+        width: Dimensions.get('screen').width - 20,
+    }
 })
 
 export default Profile
