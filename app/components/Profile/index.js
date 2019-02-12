@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { DatePickerIOS, AsyncStorage, View, StyleSheet, Text, Image, Dimensions, Button } from 'react-native'
+import { Modal, TouchableHighlight, DatePickerIOS, AsyncStorage, View, StyleSheet, Text, Image, Dimensions, Button } from 'react-native'
 import { ScrollView, TextInput } from 'react-native-gesture-handler';
 import PersonObj from '../../Models/PersonObj.ts';
+import Moment from 'moment';
 
 class Profile extends Component {
     
@@ -15,14 +16,27 @@ class Profile extends Component {
             editA : false,
             visibility: false,
             person: new PersonObj(),
-            chosenDate: new Date('15 Feb 1995')
+            chosenDate: new Date('15 Feb 1995'),
+            modalVisible: false,
 
         }
         this.setDate = this.setDate.bind(this);
     }
 
     setDate(newDate) {
-        this.setState({chosenDate: newDate});
+        let obj = this.state.person
+        
+        console.log(newDate)
+        Moment.locale('en');
+        obj.dob = Moment(newDate).format('DD MMMM YYYY')
+        this.setState({
+            chosenDate: newDate,
+            person: obj
+        }); 
+    }
+    
+    setModalVisible(visible) {
+        this.setState({modalVisible: visible});
     }
 
     save = async (key, object) => {
@@ -139,7 +153,9 @@ class Profile extends Component {
                                 }
                                 editable = {editA}
                                 style={[styles.value, border]}>{valueArr[i]}</TextInput>
-                                <Button title='calendar' style={{flex:0.5}}></Button>
+                                <Button title='calendar' style={{flex:0.5}} onPress={() => {this.setModalVisible(true);}}
+                                
+                                ></Button>
                         </View>
                         
                     </View>    
@@ -173,16 +189,33 @@ class Profile extends Component {
                     title={isEdit}
                 />
                 <ScrollView style={{marginTop:20}} horizontal pagingEnabled>
+
+
                     <Text style={styles.description}>{item_.description}</Text>
                     <View style={styles.biodata}>
                         {arr}
-                    </View>
-                    <View style={styles.datePicker}>
-                        <DatePickerIOS
-                        mode='date'
-                        date={this.state.chosenDate}
-                        onDateChange={this.setDate}
-                        />
+                        <Modal
+                            animationType="fade"
+                            transparent
+                            visible={this.state.modalVisible}
+                            onRequestClose={() => {
+                                Alert.alert('Modal has been closed.');
+                            }}
+                            style={{height: 200, backgroundColor: 'red'}}>
+
+                                <TouchableHighlight
+                                    style={{backgroundColor:'yellow', flex: 1, backgroundColor: 'rgba(52, 52, 52, 0.8)', justifyContent:'flex-end'}}
+                                    onPress={() => {
+                                    this.setModalVisible(!this.state.modalVisible);
+                                    }}>
+                                    <DatePickerIOS
+                                    mode='date'
+                                    date={this.state.chosenDate}
+                                    onDateChange={this.setDate}
+                                    style={{backgroundColor:'white'}}
+                                />
+                                </TouchableHighlight>
+                        </Modal>
                     </View>
                 </ScrollView>
             </View>
